@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, S;
+    printf("Стороны прямоугольника a = ");
+    scanf("%d/n", &a);
+    printf("b = ");
+    scanf("%d/n", &b);
+    S = a*b;
+    printf("Площадь S = %d", S);
+    return(0);
+}
