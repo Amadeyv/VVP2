@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int  a, b, c, ac, bc, p;
+    printf("vvedite koordinati a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    printf("c = ");
+    scanf("%d", &c);
+    if ((c>a&&c<b)||(c<a&&c>b)) {
+        ac = abs(c - a);
+        bc = abs(c - b);
+        p = ac*bc;
+        printf("proizvedenie p = %d", p);
+    }
+    else {
+        printf("c doljna lejat v seredine");
+    }
+    return 0;
+}
