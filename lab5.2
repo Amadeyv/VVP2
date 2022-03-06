@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int  a, b, c, ac, bc, s;
+    printf("vvedite koordinati a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    printf("c = ");
+    scanf("%d", &c);
+    ac = abs(c - a);
+    printf("ac = %d\n", ac);
+    bc = abs(c - b);
+    printf("bc = %d\n", bc);
+    s = ac + bc;
+    printf("summa s = %d", s);
+    return 0;
+}
