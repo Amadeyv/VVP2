@@ -3,9 +3,14 @@
 
 int main() {
     float a, p = 3.14, r;
-    printf("vvedite ugol a = ");
+    printf("vvedite ugol(0<a<360) a = ");
     scanf("%f", &a);
-    r = (a/180)*p;
-    printf("r = %f", r);
+    if (a>0&&a<360) {
+        r = (a/180)*p;
+        printf("r = %f", r);
+    }
+    else {
+        printf("ne sootvetstvuet usloviyam");
+    }
     return(0);
 }
