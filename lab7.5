@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, x, b;
+    printf("koeficient a = ");
+    scanf("%f", &a);
+    printf("koeficient b = ");
+    scanf("%f", &b);
+    if (a>0||a<0) {
+        x = (0-b)/a;
+        printf("x = %f", x);
+    }
+    else {
+        printf("a = 0 (.\ _ /.)");
+    }
+    return(0);
+}
