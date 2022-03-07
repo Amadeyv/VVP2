@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, p = 3.14, r;
+    printf("vvedite ugol(0<a<2p) a = ");
+    scanf("%f", &a);
+    if (a>0&&a<6.28) {
+        r = (a/p)*180;
+        printf("r = %f", r);
+    }
+    else {
+        printf("ne sootvetstvuet usloviyam");
+    }
+    return(0);
+}
