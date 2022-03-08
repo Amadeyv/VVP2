@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int k, d, n, v;
+    printf("den k = ");
+    scanf("%d", &k);
+    printf("1-ii den goda bil n-im dnem nedeli. n = ");
+    scanf("%d", &n);
+    if (k>0&&k<366&&n>0&&n<8) {
+        v = k/7;
+        d = k - v*7 + n - 1;
+        if (d>7) {
+            d = d - 7;
+            printf("%d-tii den goda bil %d-m dnem nedeli", k, d);
+        }
+        else {
+            if (d==0){
+                d = d + 7;
+                printf("%d-tii den goda bil %d-m dnem nedeli", k, d);
+            }
+            else {
+                printf("%d-tii den goda bil %d-m dnem nedeli", k, d);
+            }
+        }
+    }
+    else {
+        printf("0<k<366 i 0<n<8");
+    }
+    return 0;
+}
