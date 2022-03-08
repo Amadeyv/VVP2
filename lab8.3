@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, k, c;
+    printf("dlina otrezka a = ");
+    scanf("%d", &a);
+    printf("dlina otrezka b = ");
+    scanf("%d", &b);
+    if (a>b) {
+        k = a/b;
+        c = a - b*k;
+        printf("ostavshiisya otrezok c = %d", c);
+    }
+    else {
+        printf("a<b ili a=b");
+    }
+    return 0;
+}
