@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, ka, kb, k, p;
+    printf("vvedite dlini storon a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    printf("c = ");
+    scanf("%d", &c);
+    ka = a/c;
+    kb = b/c;
+    k = ka*kb;
+    p = a*b - k*c*c;
+    printf("kolichestvo kvadratov k = %d\n", k);
+    printf("ostavshayasya ploshad p = %d", p);
+    return 0;
+}
