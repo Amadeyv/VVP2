@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int n, v, o, p;
+    printf("vvedite god n = ");
+    scanf("%d", &n);
+    p = n/100;
+    o = n - p*100;
+    if(o==0) {
+        v = p;
+    }
+    else{
+        v = p + 1;
+    }    
+    printf("%d-ii god bil v %d-om veke", n, v);
+    return 0;
+}
