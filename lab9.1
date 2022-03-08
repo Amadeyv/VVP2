@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int n, m, s;
+    printf("kolichestvo secund n = ");
+    scanf("%d", &n);
+    if (n>0) {
+        m = n/60;
+        s = n - m*60;
+        printf("s poslednei minuti proshlo %d secund", s);
+    }
+    else {
+        printf("n ne mozhet bit menshe 0");
+    }
+    return 0;
+}
