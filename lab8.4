@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, k, c;
+    printf("chislo a = ");
+    scanf("%d", &a);
+    if (a>9&&a<100) {
+        b = a/10;
+        k = a - b*10;
+        c = k*10 + b;
+        printf("novoe chislo c = %d", c);
+    }
+    else {
+        printf("chislo ne dvuznachnoe");
+    }
+    return 0;
+}
