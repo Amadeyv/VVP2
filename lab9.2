@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int k, d, v;
+    printf("den k = ");
+    scanf("%d", &k);
+    if (k>0&&k<366) {
+        v = k/7;
+        d = k - v*7;
+        printf("%d-tii den goda bil %d-m dnem nedeli", k, d);
+    }
+    else {
+        printf("0>k>366");
+    }
+    return 0;
+}
