@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a, b1, b2, c1, c2, c3;
+    printf("vvedite chisla a = ");
+    scanf("%d", &a);
+    b1 = a/10;
+    c3 = a - b1*10;
+    c1 = a/100;
+    c2 = (a - c1*100 - c3)/10;
+    if (a>99&&a<1000&&((c1<c2&&c2<c3)||(c1>c2&&c2>c3))) {
+        printf("udtverzhdenie verno");
+    }
+    else {
+        printf("udtverzhdenie neverno");
+    }
+    return 0;
+}
