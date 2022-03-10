@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, xa, xb, xc, ya, yb, yc;
+    float rb, rc;
+    printf("vvedite koordinati xa = ");
+    scanf("%d", &xa);
+    printf("ya = ");
+    scanf("%d", &ya);
+    printf("xb = ");
+    scanf("%d", &xb);
+    printf("yb = ");
+    scanf("%d", &yb);
+    printf("xc = ");
+    scanf("%d", &xc);
+    printf("yc = ");
+    scanf("%d", &yc);
+    rb = sqrt((xa - xb)*(xa - xb) + (ya - yb)*(ya - yb));
+    rc = sqrt((xa - xc)*(xa - xc) + (ya - yc)*(ya - yc));
+    if (rb<rc) {
+        printf("B(%d;%d)\n", xb, yb);
+        printf("rb = %f", rb);
+    }
+    else {
+        printf("C(%d;%d)\n", xc, yc);
+        printf("rc = %f", rc);
+    }
+    return 0;
+}
