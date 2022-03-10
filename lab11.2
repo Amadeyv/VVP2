@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, s;
+    printf("vvedite chisla a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    printf("c = ");
+    scanf("%d", &c);
+    if (a>b) {
+        if (c>b) 
+            s = a + c;
+        else 
+            s = a + b;
+    }
+    else {
+        if (c>a) 
+            s = b + c;
+        else 
+            s = b + a;
+    }
+    printf("s = %d", s);
+    return 0;
+}
