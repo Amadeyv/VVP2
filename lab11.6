@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int x, v;
+    printf("vvedite chislo x = ");
+    scanf("%d", &x);
+    v = x/2;
+    if (x>0&&x<1000) {
+        if (x>99) {
+            if(x==v*2)
+                printf("trehznachnoe chetnoe chislo");
+            else
+                printf("trehznachnoe nechetnoe chislo");
+        }
+        else {
+            if (x>9) {
+                if (x==v*2) 
+                    printf("dvuznachnoe chetnoe chislo");
+                else 
+                    printf("dvuznachnoe nechetnoe chislo");
+            }
+            else {
+                if (x==v*2)
+                    printf("odnoznachnoe chetnoe chislo");
+                else
+                    printf("odnoznachnoe nechetnoe chislo");
+            }
+        }
+    }
+    else
+        printf("0<x<1000");
+    return 0;
+}
