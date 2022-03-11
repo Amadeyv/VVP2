@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+int main() {
+    int ch, a, b, c, v;
+    char* s[9];
+    char* d[10]; 
+    char* x[10];
+    char* t[10];
+    s[0] = "sto";
+    s[1] = "dvesti";
+    s[2] = "trista";
+    s[3] = "chetiresta";
+    s[4] = "pyatsot";
+    s[5] = "shestsot";
+    s[6] = "semsot";
+    s[7] = "vosemsot";
+    s[8] = "devyatsot";
+    d[0] = " ";
+    d[1] = "desyat";
+    d[2] = "dvadcat";
+    d[3] = "tridcat";
+    d[4] = "sorok";
+    d[5] = "pyatdesyat";
+    d[6] = "shestdesyat";
+    d[7] = "semdesyat";
+    d[8] = "vosemdesyat";
+    d[9] = "devyanosto";
+    x[0] = " ";
+    x[1] = "odin";
+    x[2] = "dva";
+    x[3] = "tri";
+    x[4] = "chetire";
+    x[5] = "pyat";
+    x[6] = "shest";
+    x[7] = "sem";
+    x[8] = "vosem";
+    x[9] = "devyat";
+    t[0] = "desyat";
+    t[1] = "odinnadcat";
+    t[2] = "dvenadcat";
+    t[3] = "trinadcat";
+    t[4] = "chetirnadcat";
+    t[5] = "pyatnadcat";
+    t[6] = "shestnadcat";
+    t[7] = "semnadcat";
+    t[8] = "vosemnadcat";
+    t[9] = "devyatnadcat";
+    printf("vvedite trehznachnoe chislo ch = ");
+    scanf("%d", &ch);
+    a = ch/100;
+    b = ch/10 - a*10;
+    c = ch - a*100 - b*10;
+    if (ch>99&&ch<1000) {
+        if (b==1) 
+            printf("%s %s", s[a-1], t[c]);
+        else
+            printf("%s %s %s", s[a-1], d[b], x[c]);
+    }
+    return 0;
+}
