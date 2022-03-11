@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main() {
+    int d, m;
+    char* mon[12];
+    char* day[31];
+    mon[0] = "yanvarya";
+    mon[1] = "fevralya";
+    mon[2] = "marta";
+    mon[3] = "aprelya";
+    mon[4] = "maya";
+    mon[5] = "iyunya";
+    mon[6] = "iyulya";
+    mon[7] = "avgusta";
+    mon[8] = "sentyabrya";
+    mon[9] = "oktyabrya";
+    mon[10] = "noyabrya";
+    mon[11] = "dekabrya";
+    day[0] = "pervoe";
+    day[1] = "vtoroe";
+    day[2] = "tretie";
+    day[3] = "chetvertoe";
+    day[4] = "pyatoe";
+    day[5] = "shestoe";
+    day[6] = "sedmoe";
+    day[7] = "vosmoe";
+    day[8] = "devyatoe";
+    day[9] = "desyatoe";
+    day[10] = "odinnadcatoe";
+    day[11] = "dvenadcatoe";
+    day[12] = "trinadcatoe";
+    day[13] = "chetirnadcatoe";
+    day[14] = "pyatnadcatoe";
+    day[15] = "shestnadcatoe";
+    day[16] = "semnadcatoe";
+    day[17] = "vosemnadcatoe";
+    day[18] = "devyatnadcatoe";
+    day[19] = "dvacatoe";
+    day[20] = "dvacatpervoe";
+    day[21] = "dvacatvtoroe";
+    day[22] = "dvacattretie";
+    day[23] = "dvacatchetvertoe";
+    day[24] = "dvacatpyatoe";
+    day[25] = "dvacatshestoe";
+    day[26] = "dvacatsedmoe";
+    day[27] = "dvacatvosmoe";
+    day[28] = "dvacatdevyatoe";
+    day[29] = "tricatoe";
+    day[30] = "tricatpervoe";
+    printf("vvedite den d ");
+    scanf("%d", &d);
+    printf("vvedite mesyac m ");
+    scanf("%d", &m);
+    printf("%s %s", day[d-1], mon[m-1]);
+    return 0;
+}
