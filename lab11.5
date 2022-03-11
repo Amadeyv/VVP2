@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int x, v;
+    printf("vvedite chislo x = ");
+    scanf("%d", &x);
+    v = x/2;
+    if (x==0) {    
+        printf("nulevoe chislo");
+    }
+    else {
+        if(x>0) {
+            if (x==v*2) 
+                printf("polozhitelnoe chetnoe chislo");
+            else
+                printf("polozhitelnoe nechetnoe chislo");
+        }
+        else {
+            if(x==v*2)
+                printf("otricatelnoe chetnoe chislo");
+            else
+                printf("otricatelnoe nechetnoe chislo");
+        }
+    }
+    return 0;
+}
