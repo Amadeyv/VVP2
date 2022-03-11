@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main() {
+    int k;
+    char* z[31];
+    z[0] = "desyat uchebnih zadanii";
+    z[1] = "odinadcat uchebnih zadanii";
+    z[2] = "dvenadcat uchebnih zadanii";
+    z[3] = "trinadcat uchebnih zadanii";
+    z[4] = "chetirnadcat uchebnih zadanii";
+    z[5] = "pyatnadcat uchebnih zadanii";
+    z[6] = "shestnadcat uchebnih zadanii";
+    z[7] = "semnadcat uchebnih zadanii";
+    z[8] = "vosemnadcat uchebnih zadanii";
+    z[9] = "devyatnadcat uchebnih zadanii";
+    z[10] = "dvadcat uchebnih zadanii";
+    z[11] = "dvadcat odno uchebnoe zadanie";
+    z[12] = "dvadcat dva uchebnih zadaniya";
+    z[13] = "dvadcat tri uchebnih zadaniya";
+    z[14] = "dvadcat chetire uchebnih zadaniya";
+    z[15] = "dvadcat pyat uchebnih zadanii";
+    z[16] = "dvadcat shest uchebnih zadanii";
+    z[17] = "dvadcat sem uchebnih zadanii";
+    z[18] = "dvadcat vosem uchebnih zadanii";
+    z[19] = "dvadcat devyat uchebnih zadanii";
+    z[20] = "tridcat uchebnih zadanii";
+    z[21] = "tridcat odno uchebnoe zadanie";
+    z[22] = "tridcat dva uchebnih zadaniya";
+    z[23] = "tridcat tri uchebnih zadaniya";
+    z[24] = "tridcat chetire uchebnih zadaniya";
+    z[25] = "tridcat pyat uchebnih zadanii";
+    z[26] = "tridcat shest uchebnih zadanii";
+    z[27] = "tridcat sem uchebnih zadanii";
+    z[28] = "tridcat vosem uchebnih zadanii";
+    z[29] = "tridcat devyat uchebnih zadanii";
+    z[30] = "sorok uchebnih zadanii";
+    printf("vvedite kolichestvo zadanii k = ");
+    scanf("%d", &k);
+    if (k>9&&k<41) {
+        k = k-10;
+        printf("%s", z[k]);
+    }
+    else 
+        printf("9<k<41");
+    return 0;
+}
