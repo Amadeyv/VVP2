@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, k;
+    float s, a;
+    printf("vvedite chislo a = ");
+    scanf("%f", &a);
+    printf("vvedite stepen n = ");
+    scanf("%d", &n);
+    s = 1;
+    k = 1;
+    while (k<n+1) {
+        s = s + pow((0-a),k);
+        k = k + 1;
+    }
+    printf("summa s = %f", s);
+    return 0;
+}
