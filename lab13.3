@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int n, c, k;
+    printf("vvedite chislo n = ");
+    scanf("%d", &n);
+    c = 0;
+    k = 0;
+    while (c<n) {
+        k = k + 2*c + 1;
+        c = c + 1;
+    }
+    printf("kvadrat chisla %d raven %d", n, k);
+    return 0;
+}
