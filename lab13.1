@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    float p, v, s;
+    printf("vvedite stoimost 1 kg konfet p = ");
+    scanf("%f", &p);
+    v = 0.1;
+    while (v<1.1) {
+        s = p*v;
+        printf("stoimost %f kg konfet s = %f\n", v, s);
+        v = v + 0.1;
+    }
+    return 0;
+}
