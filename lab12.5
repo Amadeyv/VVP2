@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+    int g, g1, v, p, a, pol;
+    char* an[12];
+    char* cl[5][2];
+    cl[0][0] = "zelenoi";
+    cl[0][1] = "zelenogo";
+    cl[1][0] = "krasnoi";
+    cl[1][1] = "krasnogo";
+    cl[2][0] = "zheltoi";
+    cl[2][1] = "zheltogo";
+    cl[3][0] = "beloi";
+    cl[3][1] = "belogo";
+    cl[4][0] = "chernoi";
+    cl[4][1] = "chernogo";
+    an[0] = "krisi";
+    an[1] = "korovi";
+    an[2] = "tigra";
+    an[3] = "zaica";
+    an[4] = "drakona";
+    an[5] = "zmei";
+    an[6] = "loshadi";
+    an[7] = "ovci";
+    an[8] = "obeziani";
+    an[9] = "kurici";
+    an[10] = "sobaki";
+    an[11] = "svinii";
+    printf("vvedite god g = ");
+    scanf("%d", &g);
+    g1 = g - 1983;
+    while (g1<0) {
+        g1 = g1 + 60;
+    }
+    v = g1/60;
+    v = g1 - v*60;
+    p = v/12;
+    a = v - p*12;
+    if (a==3||a==4||a==5)
+        pol = 1;
+    else
+        pol = 0;
+    if (a==0) 
+        a = 11;
+    else
+        a = a - 1;
+    printf("god %s %s", cl[p][pol], an[a]);
+    return 0;
+}
