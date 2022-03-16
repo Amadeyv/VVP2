@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    float c, p;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    c = 1.1;
+    p = 1;
+    while (c<((n+1)*1.1)) {
+        p = p*c;
+        c = c + 1.1;
+    }
+    printf("proizvedenie p = %f", p);
+    return 0;
+}
