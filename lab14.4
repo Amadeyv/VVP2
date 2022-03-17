@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float s, p, k;
+    printf("0<p<25\n");
+    printf("vvedite kolichestvo procentov p = ");
+    scanf("%f", &p);
+    s = 1000;
+    k = 0;
+    p = p/100 + 1;
+    while (s<1100) {
+        s = s*p;
+        k = k + 1;
+    }
+    printf("kolichestvo mesyacev k = %f\n", k);
+    printf("itogovii razmer vklada s = %f", s);
+    return 0;
+}
