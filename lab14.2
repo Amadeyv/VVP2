@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b, r, k;
+    printf("a>b, a>0, b>0\n");
+    printf("vvedite chisla a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    k = b;
+    r = a - k;
+    while (r>b) {
+        k = k + b;
+        r = a - k;
+    }
+    printf("rasstoyanie r = %d", r);
+    return 0;
+}
