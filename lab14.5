@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b, nod, k;
+    printf("vvedite chisla a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    while (k>0) {
+        if (a>b) {
+            k = a - (a/b)*b;
+            nod = b;
+            a = b;
+            b = k;
+        }
+        else {
+            k = b - (b/a)*a;
+            nod = a;
+            b = a;
+            a = k;
+        }
+    }
+    printf("nod = %d", nod);
+    return 0;
+}
