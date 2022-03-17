@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, f1, f2, k, v;
+    printf("n - chislo fibonachchi, n>0\n");
+    printf("n = ");
+    scanf("%d", &n);
+    k = 2;
+    f1 = 0;
+    f2 = 1;
+    while (f2<n) {
+        v = f2;
+        f2 = f1 + f2;
+        f1 = v;
+        k = k + 1;
+    }
+    if (f2==n)
+        printf("poryadkovii nomer chisla fibonachchi n  k = %d", k);
+    else
+        printf("eto ne chislo fibonachchi");
+    return 0;
+}
