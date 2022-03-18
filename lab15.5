@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+float Fact2(int n) {
+    int p, f, v;
+    p = n/2;
+    if (n==p*2) {
+        v = 2;
+        f = 1;
+        while (v<(n+1)) {
+            f = f*v;
+            v = v + 2;
+        }
+    }
+    else {
+        v = 1;
+        f = 1;
+        while (v<(n+1)) {
+            f = f*v;
+            v = v + 2;
+        }
+    }
+    return f;
+}
+
+int main() {
+    int n, f;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    f = Fact2(n);
+    printf("n!! = %d", f);
+    return 0;
+}
