@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+int Sign(float x) {
+    if (x>0)
+        x = 1;
+    else {
+        if (x<0)
+            x = -1;
+        else
+            x = 0;
+    }
+    return x;
+}
+
+int main() {
+    float a, b, s;
+    printf("vvedite chisla a = ");
+    scanf("%f", &a);
+    printf("b = ");
+    scanf("%f", &b);
+    a = Sign(a);
+    printf("sign(a) = %f\n", a);
+    b = Sign(b);
+    printf("sign(b) = %f\n", b);
+    s = a + b;
+    printf("s = %f", s);
+    return 0;
+}
