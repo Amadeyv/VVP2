@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, v, vn, vk, k;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    int arr[n];
+    v = 0;
+    while (v<n) {
+        printf("arr[%d] = ", v);
+        scanf("%d", &arr[v]);
+        v = v + 1;
+    }
+    vn = 0;
+    vk = n - 1;
+    k = 0;
+    while (k<n) {
+        if (vn<vk) {
+            printf("arr[%d] = %d\n", vn, arr[vn]);
+            printf("arr[%d] = %d\n", vk, arr[vk]);
+            vn = vn + 1;
+            vk = vk - 1;
+        }
+        else 
+            printf("arr[%d] = %d", vn, arr[vn]);
+        k = k + 2;
+    }
+    return 0;
+}
