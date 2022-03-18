@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+float RingS(float r1, float r2) {
+    float s, p = 3.14;
+    s = p*r1*r1 - p*r2*r2;
+    return s;
+}
+
+int main() {
+    float r1, r2, r3, r4, r5, r6, s1, s2, s3;
+    printf("r1>r2, r3>r4, r5>r6\n");
+    printf("vvedite radiusi r1 = ");
+    scanf("%f", &r1);
+    printf("r2 = ");
+    scanf("%f", &r2);
+    printf("r3 = ");
+    scanf("%f", &r3);
+    printf("r4 = ");
+    scanf("%f", &r4);
+    printf("r5 = ");
+    scanf("%f", &r5);
+    printf("r6 = ");
+    scanf("%f", &r6);
+    s1 = RingS(r1, r2);
+    s2 = RingS(r3, r4);
+    s3 = RingS(r5, r6);
+    printf("s1 = %f\n", s1);
+    printf("s2 = %f\n", s2);
+    printf("s3 = %f\n", s3);
+    return 0;
+}
