@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <math.h>
+
+int Quarter(float x, float y) {
+    int c;
+    if (x>0) {
+        if (y>0) 
+            c = 1;
+        else 
+            c = 4;
+    }
+    else {
+        if (y>0)
+            c = 2;
+        else 
+            c = 3;
+    }
+    return c;
+}
+
+int main() {
+    float x1, y1, x2, y2, x3, y3, c1, c2, c3;
+    printf("koordinati ne nulevie\n");
+    printf("vvedite x1 = ");
+    scanf("%f", &x1);
+    printf("y1 = ");
+    scanf("%f", &y1);
+    printf("x2 = ");
+    scanf("%f", &x2);
+    printf("y2 = ");
+    scanf("%f", &y2);
+    printf("x3 = ");
+    scanf("%f", &x3);
+    printf("y3 = ");
+    scanf("%f", &y3);
+    c1 = Quarter(x1, y1);
+    c2 = Quarter(x2, y2);
+    c3 = Quarter(x3, y3);
+    printf("c1 = %f\n", c1);
+    printf("c2 = %f\n", c2);
+    printf("c3 = %f\n", c3);
+    return 0;
+}
