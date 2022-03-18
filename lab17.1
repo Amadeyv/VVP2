@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, v, k, l;
+    float sa;
+    printf("1<=k<=l<=n\n");
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    printf("k = ");
+    scanf("%d", &k);
+    printf("l = ");
+    scanf("%d", &l);
+    int arr[n];
+    v = 0;
+    while (v<n) {
+        printf("arr[%d] = ", v);
+        scanf("%d", &arr[v]);
+        v = v + 1;
+    }
+    v = k - 1;
+    sa = 0;
+    while (v<(l)) {
+        sa = sa + arr[v];
+        v = v + 1;
+    }
+    v = l - k + 1;
+    sa = sa/v;
+    printf("srednee arifmeticheskoe sa = %f", sa);
+    return 0;
+}
