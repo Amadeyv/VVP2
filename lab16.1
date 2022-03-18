@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int n, v;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    int arr[n];
+    v = 0;
+    while (v<n) {
+        arr[v] = 2*v + 1;
+        printf("arr[%d] = %d\n", v, arr[v]);
+        v = v + 1;
+    }
+    return 0;
+}
