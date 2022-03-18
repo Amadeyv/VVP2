@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, v, min, num;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    int a[n];
+    v = 0;
+    while (v<n) {
+        printf("a[%d] = ", v);
+        scanf("%d", &a[v]);
+        v = v + 1;
+    }
+    v = 3;
+    min = a[1];
+    num = 2;
+    while (v<n) {
+        if (a[v]<min) {
+            min = a[v];
+            num = v + 1;
+        }
+        v = v + 2;
+    }
+    printf("a[%d] = %d  -  min", num, min);
+    return 0;
+}
