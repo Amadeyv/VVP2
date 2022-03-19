@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n, v, z, o;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    int a[n];
+    v = 0;
+    while (v<n) {
+        printf("a[%d] = ", v);
+        scanf("%d", &a[v]);
+        v = v + 1;
+    }
+    v = 1;
+    o = 0;
+    while (v<n) {
+        if (a[o]>a[v]) {
+            while ((o)<v) {
+                z = a[o];
+                a[o] = a[o+1];
+                a[o+1] = z;
+                o++;
+            }
+        }
+        v++;
+    }
+    v = 0;
+    while (v<n) {
+        printf("a[%d] = %d\n", v, a[v]);
+        v++;
+    }
+    return 0;
+}
