@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    int n, v, max, min;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    int a[n];
+    v = 0;
+    while (v<n) {
+        printf("a[%d] = ", v);
+        scanf("%d", &a[v]);
+        v = v + 1;
+    }
+    v = 1;
+    max = 0;
+    min = 0;
+    while (v<n) {
+        if (a[v]>a[max]) 
+            max = v;
+        if (a[v]<a[min])
+            min = v;
+        v++;
+    }
+    if (min<max) {
+        v = min + 1;
+        while (v<max) {
+            a[v] = 0;
+            v++;
+        }
+    }
+    else {
+        v = max + 1;
+        while (v<min) {
+            a[v] = 0;
+            v++;
+        }
+    }
+    v = 0;
+    while (v<n) {
+        printf("a[%d] = %d\n", v, a[v]);
+        v++;
+    }
+    return 0;
+}
