@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n, v, q;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    int p, a[n];
+    v = 0;
+    while (v<n) {
+        printf("a[%d] = ", v);
+        scanf("%d", &a[v]);
+        v = v + 1;
+    }
+    v = n-1;
+    while (v>-1) {
+        p = (a[v]/2)*2;
+        if (p<a[v]) {
+            q = a[v];
+            break;
+        }
+        else
+        v--;
+    }
+    v = 0;
+    while (v<n) {
+        p = (a[v]/2)*2;
+        if (p<a[v]) 
+            a[v] = a[v] + q;
+        printf("a[%d] = %d\n", v, a[v]);
+        v++;
+    }
+    return 0;
+}
