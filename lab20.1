@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    int n, v, k, r;
+    printf("vvedite n = ");
+    scanf("%d", &n);
+    int a[n];
+    v = 0;
+    while (v<n) {
+        printf("a[%d] = ", v);
+        scanf("%d", &a[v]);
+        v++;
+    }
+    r = 0;
+    int b[r+1], c[r+1];
+    k = 1;
+    v = 1;
+    while (v<n) {
+        if (a[v]==a[v-1]) {
+            if (v==n-1) {
+                k++;
+                b[r] = k;
+                c[r] = a[v];
+            }
+            else
+                k++;
+        }
+        else {
+            b[r] = k;
+            c[r] = a[v-1];
+            r++;
+            k = 1;
+        }
+        v++;
+    }
+    printf("a[] = ");
+    v = 0;
+    while (v<n) {
+        printf("[%d] ", a[v]);
+        v++;
+    }
+    printf("b[] = ");
+    v = 0;
+    while (v<r+1) {
+        printf("[%d] ", b[v]);
+        v++;
+    }
+    printf("c[] = ");
+    v = 0;
+    while (v<r+1) {
+        printf("[%d] ", c[v]);
+        v++;
+    }
+    return 0;
+}
